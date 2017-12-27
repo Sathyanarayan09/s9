@@ -1,0 +1,47 @@
+{
+  "name": "s9",
+  "version": "0.1.0",
+  "private": true,
+
+  "dependencies": {
+    "axs": "^2.0.0-1",
+    "create-react-class": "^15.6.2",
+    "flexbox-react": "^4.4.0",
+    "fullpage-react": "^3.0.14",
+    "material-ui": "^0.20.0",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-atv-parallax": "^1.0.2",
+    "react-auto-scale": "^1.0.4",
+    "react-awesome-button": "^0.2.6",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "react-event-timeline": "^1.4.1",
+    "react-fittext": "^1.0.0",
+    "react-flexbox-grid": "^2.0.0",
+    "react-horizontal-timeline": "^1.4.0",
+    "react-icons": "^2.2.7",
+    "react-material-responsive-grid": "^1.2.1",
+    "react-scale-text": "^1.1.2",
+    "react-scripts": "1.0.17",
+    "react-skillbars": "^1.5.0",
+    "react-swipeable-views": "^0.12.12",
+    "react-text-loop": "^1.1.0",
+    "react-typist": "^2.0.4",
+    "recharts": "^1.0.0-beta.7",
+    "scroll-swipe": "0.0.12",
+    "semantic-ui-react": "^0.77.1",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+  
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}

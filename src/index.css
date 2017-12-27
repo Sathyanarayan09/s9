@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*html, body, h1, h2, h3, p, span, label, a {
+  font-family: 'Lato', sans-serif;
+}*/
+
+h1 {
+  font-family: 'Comfortaa';
+}
+
+.heading {
+  font-weight: 700;
+}
+
+.subheading {
+  font-weight: 300;
+}
