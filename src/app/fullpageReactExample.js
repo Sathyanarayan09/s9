@@ -12,6 +12,7 @@ import Projects from './pages/projects'
 import FinalPage from './pages/finalPage'
 
 
+
 const {changeFullpageSlide, changeHorizontalSlide} = Fullpage;
 
 require('./normalize.css');

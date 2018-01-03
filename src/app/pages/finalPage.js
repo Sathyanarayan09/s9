@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 
-import FaPaperPlaneO from 'react-icons/lib/fa/paper-plane-o';
-import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import {Accordion, Icon} from 'semantic-ui-react'
 import ATVParallax from '../pages/parallex/index';
 
 const rootDivStyle = {
@@ -26,9 +22,10 @@ class FinalPage extends React.Component {
 
         return (
             <div style={{maxWidth: 600, maxHeight: 400, margin: 'auto', paddingTop: 70}}>
-                {/*
-                <h1 style={{paddingLeft: 15, fontSize: 35}}> <FaPaperPlaneO style={{Color: '#000'}}/></h1>
-*/}
+                <div>
+                    <h1 style={{paddingLeft: 15, fontSize: 35}}>Bye..</h1>
+                </div>
+
                 <br></br><br></br>
                 <div style={rootDivStyle}>
                     <ATVParallax style={{width: 400, height: 500}}>
@@ -42,6 +39,10 @@ class FinalPage extends React.Component {
                         <img src={require('../pages/parallex/img/6.PNG')}/>
                         <img src={require('../pages/parallex/img/7.PNG')}/>
                         <img src={require('../pages/parallex/img/8.PNG')}/>
+                        <img src={require('../pages/parallex/img/9.PNG')}/>
+                        <img src={require('../pages/parallex/img/10.PNG')}/>
+                        <img src={require('../pages/parallex/img/11.PNG')}/>
+                        <img src={require('../pages/parallex/img/12.PNG')}/>
 
                         <div>
                             <div style={{
@@ -61,7 +62,10 @@ class FinalPage extends React.Component {
                         </div>
                     </ATVParallax>
                 </div>
+
+
             </div>
+
         );
     }
 }

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import MdWork from 'react-icons/lib/md/work';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+
 
 class WorkExperience extends React.Component {
     constructor(props) {
