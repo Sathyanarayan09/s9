@@ -38,9 +38,9 @@ class FinalPage extends React.Component {
 
         return (
             <div style={{ maxWidth: 600, maxHeight: 400, margin: 'auto', paddingTop: 70 }}>
-                <h3 style={{ textAlign: 'center' }}>
+                <h4 style={{ textAlign: 'center' }}>
                     Want to use my platinum card to get your work done? let's get in touch ;)
-                </h3>
+                </h4>
                 <div style={rootDivStyle}>
                     <ATVParallax style={{ width: 380, height: 420 }}>
                         {
