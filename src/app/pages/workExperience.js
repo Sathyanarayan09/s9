@@ -30,7 +30,7 @@ class WorkExperience extends React.Component {
                     </CardText>
                     <CardText>
                         <h5><span style={{ color: '#808080' }}>Work Summary</span></h5>
-                        <p>- Worked on almost every stage of Application development right from collecting requirements, developing / architecting codebase from scratch and deploying with CI/CD tools.</p>
+                        <p>- Worked on almost every stage of Application Development right from collecting requirements, developing / architecting codebase from scratch and deploying with CI/CD tools.</p>
                         <p>- Engaging with clients/partners to understand the business goals and provide appropriate solutions.</p>
                         <p>- Collaborating and working closely with team to ship deliverables on time.</p>
                         <h5><span style={{ color: '#808080' }}>Software Stack</span></h5>

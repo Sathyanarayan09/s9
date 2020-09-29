@@ -102,7 +102,7 @@ class EducationQualification extends React.Component {
                                     <Modal.Content>
                                         <Modal.Description>
                                             <Header>Institution: GKM College of Engineering and Technology</Header>
-                                            <Header>Acemedic Year : 2013-2017</Header>
+                                            <Header>academic Year : 2013-2017</Header>
                                             <Header>CGPA : 7.32</Header>
                                             <Header>Responsibilities held  :  Digital Media Designer at Advertising Committee <strong>|</strong> Student Coordinators at R&D Cell.</Header>
                                             <Header>Awards & Achievements : "Earn while you learn" - special award for excellent performance at advertising committee  <strong>|</strong> "Innovative project" - For my final year project  <strong>|</strong> 8th semester department topper with 9 GPA.</Header>

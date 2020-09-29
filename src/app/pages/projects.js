@@ -36,7 +36,7 @@ class Projects extends React.Component {
                         </Accordion.Title>
                         <Accordion.Content active={activeIndex === 0}>
                             <p><span style={{ color: '#808080' }}>Project Summary</span></p>
-                            <p>EXPA is a CRM tool to manage and analyze global operations, and plays a major role for AIESEC's internal operations.</p>
+                            <p>EXPA is a CRM tool to manage and analyse global operations, and plays a major role for AIESEC's internal operations.</p>
                             <p><span style={{ color: '#808080' }}>Software stack: </span> React | GraphQl | Redux |  REST | Apollo | Relay | Ruby on Rails. </p>
                             <p><span style={{ color: '#808080' }}>Project:</span><a href="https://aiesec.org/" target="_blank"> Link</a></p>
                         </Accordion.Content>
