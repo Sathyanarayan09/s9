@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import TiDeviceLaptop from 'react-icons/lib/ti/device-laptop';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import {Accordion, Icon} from 'semantic-ui-react'
+import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
+import { Accordion, Icon } from 'semantic-ui-react'
 
 const colors = {
     "bar": "#b8b9ba",
@@ -13,64 +13,84 @@ const colors = {
 }
 
 class Projects extends React.Component {
-    state = {activeIndex: 0}
+    state = { activeIndex: 0 }
 
     handleClick = (e, titleProps) => {
-        const {index} = titleProps
-        const {activeIndex} = this.state
+        const { index } = titleProps
+        const { activeIndex } = this.state
         const newIndex = activeIndex === index ? -1 : index
 
-        this.setState({activeIndex: newIndex})
+        this.setState({ activeIndex: newIndex })
     }
 
     render() {
-        const {activeIndex} = this.state
+        const { activeIndex } = this.state
         return (
-            <div style={{maxWidth: 600, maxHeight: 400, margin: 'auto', paddingTop: 70}}>
-                <h1 style={{paddingLeft: 15, fontSize: 35}}>Projects <TiDeviceLaptop style={{Color: '#000'}}/></h1>
-                <Card style={{padding: 20}}>
+            <div style={{ maxWidth: 600, maxHeight: 400, margin: 'auto', paddingTop: 70 }}>
+                <h1 style={{ paddingLeft: 15, fontSize: 35 }}>Projects <TiDeviceLaptop style={{ Color: '#000' }} /></h1>
+                <Card style={{ padding: 20 }}>
                     <Accordion styled>
                         <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
-                            <Icon name='dropdown'/>
-                            Human Resource Information system based on Gamification - Web Application (Dec - 2015)
+                            <Icon name='dropdown' />
+                           AIESEC (Expa CRM)
                         </Accordion.Title>
                         <Accordion.Content active={activeIndex === 0}>
-                            <p><span style={{color: '#d9dbdd'}}>Project Summary</span></p>
-                            <p>
-                                • This application is associated with full fledged HR Management functionalities like, employee
-                                monitoring, attendance maintenance, salary calculation and task assignment. Gamification
-                                concept was implemented for employee motivation and engagement at work.
-                            </p>
-
-                            <p><span style={{color: '#d9dbdd'}}>Software stack :</span> PHP | Bootstrap | Sql | embedded c. </p>
-                            <p><span style={{color: '#d9dbdd'}}>International Journal :</span><a href="http://www.ijesrt.com/issues%20pdf%20file/Archive-2017/March-2017/9.pdf" target="_blank"> Link</a></p>
+                            <p><span style={{ color: '#808080' }}>Project Summary</span></p>
+                            <p>EXPA is a CRM tool to manage and analyze global operations, and plays a major role for AIESEC's internal operations.</p>
+                            <p><span style={{ color: '#808080' }}>Software stack: </span> React | GraphQl | Redux |  REST | Apollo | Relay | Ruby on Rails. </p>
+                            <p><span style={{ color: '#808080' }}>Project:</span><a href="https://aiesec.org/" target="_blank"> Link</a></p>
                         </Accordion.Content>
 
                         <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
-                            <Icon name='dropdown'/>
-                            GKMCET Prompt - Android Application (Feb - 2014)
+                            <Icon name='dropdown' />
+                           Educatly (Social)
                         </Accordion.Title>
                         <Accordion.Content active={activeIndex === 1}>
-                            <p>
-                                This application was built for college utility purpose which consists of bus route timing details, internal mark calculator, logins for staffs & students and syllabus downloading facility for respective departments.
-                            </p>
-                            <p><span style={{color: '#d9dbdd'}}>Software stack :</span> Android Studio. </p>
+                            <p>A platform that helps students to get into universities, Educatly is the future of international education.</p>
+                            <p><span style={{ color: '#808080' }}>Software stack: </span> React | GraphQl | Redux | Apollo | Ruby on Rails. </p>
+                            <p><span style={{ color: '#808080' }}>Project:</span><a href="https://www.educatly.com/" target="_blank"> Link</a></p>
                         </Accordion.Content>
 
                         <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
-                            <Icon name='dropdown'/>
-                            E-voting System - Java Application (Jul - 2012)
+                            <Icon name='dropdown' />
+                            Ragya (Music player app)
                         </Accordion.Title>
                         <Accordion.Content active={activeIndex === 2}>
+                            <p>One of its kind music player to enjoy an uninterrupted supply of the best of Indian classical music, played based on the time of the day.</p>
+                            <p><span style={{ color: '#808080' }}>Software stack: </span>React Native | Redux | Apollo | GraphQl </p>
                             <p>
-                                This Application serves as an e-voting application for school level (SPL and ASPL election) as a replacement for ballot voting.
+                                <span style={{ color: '#808080' }}>Project:</span>
+                                <a href="https://play.google.com/store/apps/details?id=com.ragya&hl=en_IN" target="_blank"> Android | </a>
+                                <a href="https://apps.apple.com/in/app/ragya/id1481987704" target="_blank"> iOS</a>
                             </p>
-                            <p><span style={{color: '#d9dbdd'}}>Software stack :</span>Java NetBeans | MySQL</p>
+
                         </Accordion.Content>
+                        <Accordion.Title active={activeIndex === 3} index={3} onClick={this.handleClick}>
+                            <Icon name='dropdown' />
+                            Nadim (CRM)
+                        </Accordion.Title>
+                        <Accordion.Content active={activeIndex === 3}>
+                            <p>NADIM's ultra-high end furniture designs and manufacturing company, we enable them to handle all internal processes with help of a CRM tool.</p>
+                            <p><span style={{ color: '#808080' }}>Software stack: </span>React | Redux | Rest | Ruby on Rails</p>
+                            <p>
+                                <span style={{ color: '#808080' }}>Project:</span>
+                                <a href="https://www.nadim.org/" target="_blank"> Link</a>
+                            </p>
+
+                        </Accordion.Content>
+                        <Accordion.Title active={activeIndex === 4} index={4} onClick={this.handleClick}>
+                            <Icon name='dropdown' />
+                            Gehna (Mobile POS app)
+                        </Accordion.Title>
+                        <Accordion.Content active={activeIndex === 4}>
+                            <p>Gehna is leading custom handmade jewellery designer for gold, diamond jewelleries in Chennai, we developed a POS app to fasten the sales process.</p>
+                            <p><span style={{ color: '#808080' }}>Software stack: </span>React native | Redux | Rest | Ruby on Rails</p>
+                        </Accordion.Content>
+
                     </Accordion>
                 </Card>
 
-            </div>
+            </div >
         );
     }
 }

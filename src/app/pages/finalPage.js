@@ -1,7 +1,22 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import Email from 'react-icons/lib/md/email';
+
 
 import ATVParallax from '../pages/parallex/index';
-
+const img = [
+    require('../pages/parallex/img/1.png'),
+    require('../pages/parallex/img/2.png'),
+    require('../pages/parallex/img/3.PNG'),
+    require('../pages/parallex/img/4.PNG'),
+    require('../pages/parallex/img/5.PNG'),
+    require('../pages/parallex/img/6.PNG'),
+    require('../pages/parallex/img/7.PNG'),
+    require('../pages/parallex/img/8.PNG'),
+    require('../pages/parallex/img/9.PNG'),
+    require('../pages/parallex/img/10.PNG'),
+    require('../pages/parallex/img/11.PNG'),
+    require('../pages/parallex/img/12.PNG'),
+]
 const rootDivStyle = {
     position: 'absolute',
     top: 0,
@@ -11,7 +26,8 @@ const rootDivStyle = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
+    marginTop: '10px'
 }
 
 
@@ -21,29 +37,17 @@ class FinalPage extends React.Component {
     render() {
 
         return (
-            <div style={{maxWidth: 600, maxHeight: 400, margin: 'auto', paddingTop: 70}}>
-                <div>
-                    <h1 style={{paddingLeft: 15, fontSize: 35}}>Bye..</h1>
-                </div>
-
-                <br></br><br></br>
+            <div style={{ maxWidth: 600, maxHeight: 400, margin: 'auto', paddingTop: 70 }}>
+                <h3 style={{ textAlign: 'center' }}>
+                    What to use my platinum card to get your work done? let's get in touch ;)
+                </h3>
                 <div style={rootDivStyle}>
-                    <ATVParallax style={{width: 400, height: 500}}>
-
-
-                        <img src={require('../pages/parallex/img/1.png')}/>
-                        <img src={require('../pages/parallex/img/2.png')}/>
-                        <img src={require('../pages/parallex/img/3.PNG')}/>
-                        <img src={require('../pages/parallex/img/4.PNG')}/>
-                        <img src={require('../pages/parallex/img/5.PNG')}/>
-                        <img src={require('../pages/parallex/img/6.PNG')}/>
-                        <img src={require('../pages/parallex/img/7.PNG')}/>
-                        <img src={require('../pages/parallex/img/8.PNG')}/>
-                        <img src={require('../pages/parallex/img/9.PNG')}/>
-                        <img src={require('../pages/parallex/img/10.PNG')}/>
-                        <img src={require('../pages/parallex/img/11.PNG')}/>
-                        <img src={require('../pages/parallex/img/12.PNG')}/>
-
+                    <ATVParallax style={{ width: 380, height: 420 }}>
+                        {
+                            img.map((item, index) => {
+                                return <img src={item} />
+                            })
+                        }
                         <div>
                             <div style={{
                                 position: "relative",
@@ -52,19 +56,28 @@ class FinalPage extends React.Component {
                                 width: "100%",
                                 display: "table"
                             }}>
-          <span style={{
-              fontSize: "3rem",
-              display: "table-cell",
-              textAlign: "center",
-              verticalAlign: "middle"
-          }}><ATVParallax style={{Color: '#000'}}/></span>
+                                <span style={{
+                                    fontSize: "3rem",
+                                    display: "table-cell",
+                                    textAlign: "center",
+                                    verticalAlign: "middle"
+                                }}><ATVParallax style={{ Color: '#000' }} /></span>
                             </div>
                         </div>
                     </ATVParallax>
                 </div>
+                <div style={{
+                    position: 'absolute', bottom: 0,
+                    right: 0,
+                    bottom: 20,
+                    left: 0,
+                }}>
+                    <h3 style={{ textAlign: 'center', cursor: 'pointer' }}>
+                        <a  href="mailto:sathyanarayan065@gmail.com">sathyanarayan065@gmail.com</a>   <Email style={{ Color: '#000', height: 50, width: 40 }} ></Email>
+                    </h3>
+                </div>
 
-
-            </div>
+            </div >
 
         );
     }

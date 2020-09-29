@@ -1,21 +1,21 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import GoFlame from 'react-icons/lib/go/flame';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import SkillBar from 'react-skillbars';
 
 const skills = [
-    {type: "PhotoShop", level: 90},
-    {type: "JavaScript", level: 75},
-    {type: "ReactNative", level: 75},
-    {type: "Node.js", level: 65},
-    {type: "Expo Sdk", level: 75},
-    {type: "HTML5/CSS", level: 80},
-    {type: "MongoDb", level: 70},
-    {type: "Sql", level: 70},
-    {type: "PHP", level: 67},
+    { type: "JavaScript", level: 90 },
+    { type: "React", level: 90 },
+    { type: "ReactNative", level: 90 },
+    { type: "Redux", level: 90 },
+    { type: "REST", level: 90 },
+    { type: "graphQL", level: 85 },
+    { type: "SCSS/CSS", level: 85 },
+    { type: "Flutter", level: 70 },
+    { type: "Next.js", level: 70 },
+ ];
 
-];
 const colors = {
     "bar": "#b8b9ba",
     "title": {
@@ -33,13 +33,13 @@ class Skill extends React.Component {
 
 
     render() {
-        const {finished, stepIndex} = this.state;
+        const { finished, stepIndex } = this.state;
 
         return (
-            <div style={{maxWidth: 800, maxHeight: 400, margin: 'auto', paddingTop: 70}}>
-                <h1 style={{paddingLeft: 15, fontSize: 35}}>Skills<GoFlame style={{Color: '#000'}}/></h1>
-                <Card style={{padding:20}}>
-                    <SkillBar colors={colors} skills={skills}/>
+            <div style={{ maxWidth: 800, maxHeight: 400, margin: 'auto', paddingTop: 70 }}>
+                <h1 style={{ paddingLeft: 15, fontSize: 35 }}>Skills<GoFlame style={{ Color: '#000' }} /></h1>
+                <Card style={{ padding: 20 }}>
+                    <SkillBar colors={colors} skills={skills} />
                 </Card>
 
             </div>

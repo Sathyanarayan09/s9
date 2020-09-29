@@ -122,7 +122,7 @@ class EducationQualification extends React.Component {
                             style={{fontSize: 20}}>12th Grade</p>
                         </StepLabel>
                         <StepContent>
-                            <p>Completed 12th CBSE at Vels Vidyashram with <strong>7.2 </strong> CGPA (68%).
+                            <p>Completed 12th CBSE at Vels Vidyashram with <strong>7.2 </strong> CGPA.
                                 &nbsp;
                                 <Modal trigger={<Button size="medium"><p style={{fontSize:13}}>Learn more..</p></Button>}>
                                     <Modal.Header>12th Grade</Modal.Header>

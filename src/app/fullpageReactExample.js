@@ -1,8 +1,8 @@
 import React from 'react';
 import AwesomeButton from 'react-awesome-button';
-import {FaArrowLeft, FaArrowRight, FaArrowUp} from 'react-icons/lib/fa'
+import { FaArrowLeft, FaArrowRight, FaArrowUp } from 'react-icons/lib/fa'
 import 'react-awesome-button/dist/styles.css';
-import {Fullpage, HorizontalSlider, Slide} from './lib/index';
+import { Fullpage, HorizontalSlider, Slide } from './lib/index';
 
 import IntroPage from './pages/introPage'
 import EducationQualification from './pages/educationQualification'
@@ -13,7 +13,7 @@ import FinalPage from './pages/finalPage'
 
 
 
-const {changeFullpageSlide, changeHorizontalSlide} = Fullpage;
+const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
 
 require('./normalize.css');
 require('./skeleton.css');
@@ -99,7 +99,7 @@ class FullpageReact extends React.Component {
     }
 
     render() {
-        const {active} = this.state;
+        const { active } = this.state;
 
         const currentActive = active.Fullpage;
         const prevSlide = changeFullpageSlide.bind(null, currentActive - 1);
@@ -115,32 +115,32 @@ class FullpageReact extends React.Component {
         const topNav = (
             <div style={topNavStyle}>
 
-        <span style={{paddingRight: 10}} onClick={prevSlide}>
-         <AwesomeButton bubbles><FaArrowLeft/></AwesomeButton>
-        </span>
+                <span style={{ paddingRight: 10 }} onClick={prevSlide}>
+                    <AwesomeButton bubbles><FaArrowLeft /></AwesomeButton>
+                </span>
                 <span onClick={goToTop}>
-          <AwesomeButton size='auto'><FaArrowUp/></AwesomeButton>
-        </span>
-                <span style={{paddingLeft: 10}} onClick={nextSlide}>
-          <AwesomeButton bubbles><FaArrowRight/></AwesomeButton>
-        </span>
+                    <AwesomeButton size='auto'><FaArrowUp /></AwesomeButton>
+                </span>
+                <span style={{ paddingLeft: 10 }} onClick={nextSlide}>
+                    <AwesomeButton bubbles><FaArrowRight /></AwesomeButton>
+                </span>
             </div>
         );
 
         const horizontalNav = (
             <div id='horizontal-nav' style={horizontalNavStyle}>
                 <span onClick={prevHorizontalSlide}><button>PREV</button></span>
-                <span style={{position: 'absolute', right: '0px'}} onClick={nextHorizontalSlide}><button>Next</button></span>
+                <span style={{ position: 'absolute', right: '0px' }} onClick={nextHorizontalSlide}><button>Next</button></span>
             </div>
         );
 
         const horizontalSlides = [
-            <Slide style={{backgroundColor: '#4bbfc3'}}>
+            <Slide style={{ backgroundColor: '#4bbfc3' }}>
                 <p>Horizontal 2</p>
 
             </Slide>,
-            <Slide style={{backgroundColor: '#4bbfc3'}}></Slide>,
-            <Slide style={{backgroundColor: '#4bbfc3'}}><p>Horizontal 3</p></Slide>
+            <Slide style={{ backgroundColor: '#4bbfc3' }}></Slide>,
+            <Slide style={{ backgroundColor: '#4bbfc3' }}><p>Horizontal 3</p></Slide>
         ];
         horizontalSliderProps.slides = horizontalSlides;
 
@@ -148,30 +148,30 @@ class FullpageReact extends React.Component {
             id='horizontal-slider-1' {...horizontalSliderProps}>{horizontalNav}</HorizontalSlider>;
 
         const verticalSlides = [
-            <Slide style={{backgroundColor: '#fff'}}>
-                <IntroPage/>
+            <Slide style={{ backgroundColor: '#fff' }}>
+                <IntroPage />
             </Slide>,
-            <Slide style={{backgroundColor: '#e2e2e2'}}>
-                <EducationQualification/>
+            <Slide style={{ backgroundColor: '#f5fcff' }}>
+                <EducationQualification />
             </Slide>,
-            <Slide style={{backgroundColor: '#fff'}}>
-                <WorkExperience/>
+            <Slide style={{ backgroundColor: '#fff' }}>
+                <WorkExperience />
             </Slide>,
-            <Slide style={{backgroundColor: '#e2e2e2'}}>
-                <Skill/>
+            <Slide style={{ backgroundColor: '#f5fcff' }}>
+                <Projects />
             </Slide>,
-            <Slide style={{backgroundColor: '#fff'}}>
-                <Projects/>
+            <Slide style={{ backgroundColor: '#fff' }}>
+                <Skill />
             </Slide>,
-            <Slide style={{backgroundColor: '#e2e2e2'}}>
-                <FinalPage/>
+            <Slide style={{ backgroundColor: '#f5fcff' }}>
+                <FinalPage />
             </Slide>
         ];
         fullPageOptions.slides = verticalSlides;
 
         return (
             <Fullpage onSlideChangeStart={this.onSlideChangeStart}
-                      onSlideChangeEnd={this.onSlideChangeEnd} {...fullPageOptions}>
+                onSlideChangeEnd={this.onSlideChangeEnd} {...fullPageOptions}>
                 {topNav}
             </Fullpage>
         );
